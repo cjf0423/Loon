@@ -8,7 +8,7 @@ proxies:
   - {name: Trojan日本🇯🇵, server: www.cjf0423.cf, port: 443, type: trojan, password: !<str> 111111, sni: www.cjf0423.cf, skip-cert-verify: true, udp: true}
   - {name: Trojan新加坡🇸🇬, server: www.cjf0423.tk, port: 443, type: trojan, password: !<str> 111111, sni: www.cjf0423.tk, skip-cert-verify: true, udp: true}
   - {name: Trojan美国🇺🇸, server: www.cjf0423.ml, port: 443, type: trojan, password: !<str> 111111, sni: www.cjf0423.ml, skip-cert-verify: true, udp: true}
-  - {name: 德国EUserv🇩🇪, server: www.cjf541233945.tk, port: 443, type: vmess, uuid: f064d660-ad44-4957-ebcd-0f742f972c3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: www.cjf541233945.tk}}, udp: true}
+  - {name: 德国EUserv🇩🇪, server: www.cjf541233945.tk, port: 443, type: vmess, uuid: 6d61289e-c429-4e28-dc53-27d6297e4c1a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cjf0423, headers: {Host: www.cjf541233945.tk}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
