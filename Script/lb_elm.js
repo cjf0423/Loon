@@ -14,6 +14,7 @@ cron 0,59 0,9,18 * * * lb_elm.js
 变量：SM_STARTTIME 值:默认为60，当为60时，9点59分运行脚本，10点准时开枪，如果网络慢可以设置为59，则9点59分59秒开抢。
 
 更新吃货豆隐藏任务，日 300+
+更新处理cookie
 
 脚本：https://gitee.com/xiecoll/radish-script/raw/master/ELM/lb_elm.js
 */
