@@ -4,31 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-# 网关模式
-# TAP 模式代码：
-#dns:
-#  enable: true
-#  enhanced-mode: redir-host # 或 fake-ip
-#  listen: 0.0.0.0:53
-#  nameserver:
-#    - 223.5.5.5
 
-# TUN 模式代码：
-
-dns:
-  enable: true
-  enhanced-mode: redir-host
-  nameserver:
-    - 8.8.8.8 # 真实请求DNS，可多设置几个
-    - 114.114.114.114
-# interface-name: WLAN # 出口网卡名称，或者使用下方的自动检测
-tun:
-  enable: true
-  stack: gvisor # 使用 system 需要 Clash Premium 2021.05.08 及更高版本
-  dns-hijack:
-    - 198.18.0.2:53 # 请勿更改
-  auto-route: true
-  auto-detect-interface: true # 自动检测出口网卡
 
 proxies:
   - {name: Trojan日本🇯🇵, server: www.cjf0423.cf, port: 443, type: trojan, password: !<str> 222222, sni: www.cjf0423.cf, skip-cert-verify: true, udp: true}
