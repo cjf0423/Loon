@@ -1,0 +1,1393 @@
+# GLaDOS
+# GLobal Local and Destination Operating System
+# Clash Config File for Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Safari/605.1.15-175324-31-31
+# Generated at Fri Aug 19 2022 14:09:31 GMT+0000 (UTC) by Aperture Science
+# ░██████╗░██╗░░░░░░█████╗░██████╗░░█████╗░░██████╗
+# ██╔════╝░██║░░░░░██╔══██╗██╔══██╗██╔══██╗██╔════╝
+# ██║░░██╗░██║░░░░░███████║██║░░██║██║░░██║╚█████╗░
+# ██║░░╚██╗██║░░░░░██╔══██║██║░░██║██║░░██║░╚═══██╗
+# ╚██████╔╝███████╗██║░░██║██████╔╝╚█████╔╝██████╔╝
+# ░╚═════╝░╚══════╝╚═╝░░╚═╝╚═════╝░░╚════╝░╚═════╝░
+# port of HTTP
+port: 7890
+
+# port of SOCKS5
+socks-port: 7891
+
+allow-lan: false
+
+# Rule / Global/ DIRECT (default is Rule)
+mode: rule
+
+
+# set log level to stdout (default is info)
+# info / warning / error / debug
+log-level: info
+
+# A RESTful API for clash
+external-controller: 127.0.0.1:9090
+
+# Secret for RESTful API (Optional)
+secret: ""
+
+dns:
+  enable: false # set true to enable dns (default is false)
+  listen: 127.0.0.1:53
+  nameserver:
+     - 119.29.29.29
+     - 114.114.114.114
+  fallback: # concurrent request with nameserver, fallback used when GEOIP country isn't CN
+     - https://1.1.1.1/dns-query
+     - tls://1.0.0.1:853
+     - tls://dns.google:853
+
+
+proxies:
+  - name: Trojan日本🇯🇵
+    type: trojan
+    server: www.cjf0423.cf
+    port: 443
+    sni: www.cjf0423.cf
+    password: "111111"
+    udp: true
+  - name: Trojan新加坡🇸🇬
+    type: trojan
+    server: www.cjf0423.tk
+    port: 443
+    sni: www.cjf0423.tk
+    password: "111111"
+    udp: true
+  - name: Trojan美国🇺🇸
+    type: trojan
+    server: www.cjf0423.ml
+    port: 443
+    sni: www.cjf0423.ml
+    password: "111111"
+    udp: true
+  - name: Trojan台湾
+    type: trojan
+    server: www.cjf0423.ga
+    port: 443
+    sni: www.cjf0423.ga
+    password: "111111"
+    udp: true
+  - name: GLaDOS-N2-00-Pro
+    type: trojan
+    server: 121c6ca.xa.gladns.com
+    port: 3389
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: GLaDOS-N2-01-Pro
+    type: trojan
+    server: 121c6ca.xb.gladns.com
+    port: 3389
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: GLaDOS-N2-02-Pro
+    type: trojan
+    server: 121c6ca.xc.gladns.com
+    port: 3389
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: GLaDOS-N2-03-Pro
+    type: trojan
+    server: 121c6ca.xd.gladns.com
+    port: 3389
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: GLaDOS-N2-04-Pro
+    type: trojan
+    server: 121c6ca.xe.gladns.com
+    port: 3389
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: GLaDOS-N2-05-Pro
+    type: trojan
+    server: 121c6ca.xf.gladns.com
+    port: 3389
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇺🇸 GLaDOS-US-1-Netflix
+    type: vmess
+    server: 121c6ca.f4.gladns.com
+    port: 3331
+    uuid: "57e0cb4d-eae5-48ec-8091-149dc2b309e0"
+    alterId: 0
+    cipher: chacha20-poly1305
+    udp: true
+    network: ws
+    ws-path: "/s"
+    ws-headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    ws-opts:
+      path: "/s"
+      headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    headers: {"Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    servername: n2.gladns.com
+    tls: true
+  - name: 🇺🇸 GLaDOS-US-2-Netflix
+    type: vmess
+    server: 121c6ca.f5.gladns.com
+    port: 3331
+    uuid: "57e0cb4d-eae5-48ec-8091-149dc2b309e0"
+    alterId: 0
+    cipher: chacha20-poly1305
+    udp: true
+    network: ws
+    ws-path: "/s"
+    ws-headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    ws-opts:
+      path: "/s"
+      headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    headers: {"Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    servername: n2.gladns.com
+    tls: true
+  - name: 🇺🇸 GLaDOS-US-3-Netflix
+    type: vmess
+    server: 121c6ca.f6.gladns.com
+    port: 3331
+    uuid: "57e0cb4d-eae5-48ec-8091-149dc2b309e0"
+    alterId: 0
+    cipher: chacha20-poly1305
+    udp: true
+    network: ws
+    ws-path: "/s"
+    ws-headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    ws-opts:
+      path: "/s"
+      headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    headers: {"Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    servername: n2.gladns.com
+    tls: true
+  - name: 🇨🇳 GLaDOS-TW-1-Netflix
+    type: vmess
+    server: 121c6ca.f1.gladns.com
+    port: 3331
+    uuid: "57e0cb4d-eae5-48ec-8091-149dc2b309e0"
+    alterId: 0
+    cipher: chacha20-poly1305
+    udp: true
+    network: ws
+    ws-path: "/s"
+    ws-headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    ws-opts:
+      path: "/s"
+      headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    headers: {"Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    servername: n2.gladns.com
+    tls: true
+  - name: 🇨🇳 GLaDOS-TW-2-Netflix
+    type: vmess
+    server: 121c6ca.f2.gladns.com
+    port: 3331
+    uuid: "57e0cb4d-eae5-48ec-8091-149dc2b309e0"
+    alterId: 0
+    cipher: chacha20-poly1305
+    udp: true
+    network: ws
+    ws-path: "/s"
+    ws-headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    ws-opts:
+      path: "/s"
+      headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    headers: {"Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    servername: n2.gladns.com
+    tls: true
+  - name: 🇨🇳 GLaDOS-TW-3-Netflix
+    type: vmess
+    server: 121c6ca.f3.gladns.com
+    port: 3331
+    uuid: "57e0cb4d-eae5-48ec-8091-149dc2b309e0"
+    alterId: 0
+    cipher: chacha20-poly1305
+    udp: true
+    network: ws
+    ws-path: "/s"
+    ws-headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    ws-opts:
+      path: "/s"
+      headers: { "Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    headers: {"Host":"tls.apple.com", "Edge": "121c6ca.fm.huawei.com:12876" }
+    servername: n2.gladns.com
+    tls: true
+  - name: 🇺🇸 GLaDOS-GEOIP-US-01-Pro
+    type: trojan
+    server: 121c6ca.ga.gladns.com
+    port: 3381
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇺🇸 GLaDOS-GEOIP-US-02-Pro
+    type: trojan
+    server: 121c6ca.gb.gladns.com
+    port: 3381
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇺🇸 GLaDOS-GEOIP-US-03-Pro
+    type: trojan
+    server: 121c6ca.gc.gladns.com
+    port: 3381
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇯🇵 GLaDOS-GEOIP-JP-01-Pro
+    type: trojan
+    server: 121c6ca.ga.gladns.com
+    port: 3382
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇯🇵 GLaDOS-GEOIP-JP-02-Pro
+    type: trojan
+    server: 121c6ca.gb.gladns.com
+    port: 3382
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇯🇵 GLaDOS-GEOIP-JP-03-Pro
+    type: trojan
+    server: 121c6ca.gc.gladns.com
+    port: 3382
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇨🇳 GLaDOS-GEOIP-TW-01-Pro
+    type: trojan
+    server: 121c6ca.ga.gladns.com
+    port: 3383
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇨🇳 GLaDOS-GEOIP-TW-02-Pro
+    type: trojan
+    server: 121c6ca.gb.gladns.com
+    port: 3383
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇨🇳 GLaDOS-GEOIP-TW-03-Pro
+    type: trojan
+    server: 121c6ca.gc.gladns.com
+    port: 3383
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇭🇰 GLaDOS-GEOIP-HK-01-Pro
+    type: trojan
+    server: 121c6ca.ga.gladns.com
+    port: 3384
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇭🇰 GLaDOS-GEOIP-HK-02-Pro
+    type: trojan
+    server: 121c6ca.gb.gladns.com
+    port: 3384
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇭🇰 GLaDOS-GEOIP-HK-03-Pro
+    type: trojan
+    server: 121c6ca.gc.gladns.com
+    port: 3384
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇸🇬 GLaDOS-GEOIP-SG-01-Pro
+    type: trojan
+    server: 121c6ca.ga.gladns.com
+    port: 3385
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇸🇬 GLaDOS-GEOIP-SG-02-Pro
+    type: trojan
+    server: 121c6ca.gb.gladns.com
+    port: 3385
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇸🇬 GLaDOS-GEOIP-SG-03-Pro
+    type: trojan
+    server: 121c6ca.gc.gladns.com
+    port: 3385
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇬🇧 GLaDOS-GEOIP-UK-01-Pro
+    type: trojan
+    server: 121c6ca.ga.gladns.com
+    port: 3386
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇬🇧 GLaDOS-GEOIP-UK-02-Pro
+    type: trojan
+    server: 121c6ca.gb.gladns.com
+    port: 3386
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+  - name: 🇬🇧 GLaDOS-GEOIP-UK-03-Pro
+    type: trojan
+    server: 121c6ca.gc.gladns.com
+    port: 3386
+    sni: n2.gladns.com
+    password: "8a1ab0df6abea549"
+    udp: true
+
+proxy-groups:
+  - name: 节点选择
+    type: "select"
+    proxies:
+        - Trojan日本🇯🇵
+        - Trojan新加坡🇸🇬
+        - Trojan美国🇺🇸
+        - Trojan台湾
+        - GLaDOS-N2-00-Pro
+        - GLaDOS-N2-01-Pro
+        - GLaDOS-N2-02-Pro
+        - GLaDOS-N2-03-Pro
+        - GLaDOS-N2-04-Pro
+        - GLaDOS-N2-05-Pro
+        - 🇺🇸 GLaDOS-US-1-Netflix
+        - 🇺🇸 GLaDOS-US-2-Netflix
+        - 🇺🇸 GLaDOS-US-3-Netflix
+        - 🇨🇳 GLaDOS-TW-1-Netflix
+        - 🇨🇳 GLaDOS-TW-2-Netflix
+        - 🇨🇳 GLaDOS-TW-3-Netflix
+        - 🇺🇸 GLaDOS-GEOIP-US-01-Pro
+        - 🇺🇸 GLaDOS-GEOIP-US-02-Pro
+        - 🇺🇸 GLaDOS-GEOIP-US-03-Pro
+        - 🇯🇵 GLaDOS-GEOIP-JP-01-Pro
+        - 🇯🇵 GLaDOS-GEOIP-JP-02-Pro
+        - 🇯🇵 GLaDOS-GEOIP-JP-03-Pro
+        - 🇨🇳 GLaDOS-GEOIP-TW-01-Pro
+        - 🇨🇳 GLaDOS-GEOIP-TW-02-Pro
+        - 🇨🇳 GLaDOS-GEOIP-TW-03-Pro
+        - 🇭🇰 GLaDOS-GEOIP-HK-01-Pro
+        - 🇭🇰 GLaDOS-GEOIP-HK-02-Pro
+        - 🇭🇰 GLaDOS-GEOIP-HK-03-Pro
+        - 🇸🇬 GLaDOS-GEOIP-SG-01-Pro
+        - 🇸🇬 GLaDOS-GEOIP-SG-02-Pro
+        - 🇸🇬 GLaDOS-GEOIP-SG-03-Pro
+        - 🇬🇧 GLaDOS-GEOIP-UK-01-Pro
+        - 🇬🇧 GLaDOS-GEOIP-UK-02-Pro
+        - 🇬🇧 GLaDOS-GEOIP-UK-03-Pro
+  - name: 自动选择
+    type: "url-test"
+    url: "http://www.gstatic.cn/generate_204"
+    interval: 300
+    tolerance: 50
+    proxies:
+        - GLaDOS-N2-00-Pro
+        - GLaDOS-N2-01-Pro
+        - GLaDOS-N2-02-Pro
+        - GLaDOS-N2-03-Pro
+        - GLaDOS-N2-04-Pro
+        - GLaDOS-N2-05-Pro
+        - 🇺🇸 GLaDOS-US-1-Netflix
+        - 🇺🇸 GLaDOS-US-2-Netflix
+        - 🇺🇸 GLaDOS-US-3-Netflix
+        - 🇨🇳 GLaDOS-TW-1-Netflix
+        - 🇨🇳 GLaDOS-TW-2-Netflix
+        - 🇨🇳 GLaDOS-TW-3-Netflix
+        - 🇺🇸 GLaDOS-GEOIP-US-01-Pro
+        - 🇺🇸 GLaDOS-GEOIP-US-02-Pro
+        - 🇺🇸 GLaDOS-GEOIP-US-03-Pro
+        - 🇯🇵 GLaDOS-GEOIP-JP-01-Pro
+        - 🇯🇵 GLaDOS-GEOIP-JP-02-Pro
+        - 🇯🇵 GLaDOS-GEOIP-JP-03-Pro
+        - 🇨🇳 GLaDOS-GEOIP-TW-01-Pro
+        - 🇨🇳 GLaDOS-GEOIP-TW-02-Pro
+        - 🇨🇳 GLaDOS-GEOIP-TW-03-Pro
+        - 🇭🇰 GLaDOS-GEOIP-HK-01-Pro
+        - 🇭🇰 GLaDOS-GEOIP-HK-02-Pro
+        - 🇭🇰 GLaDOS-GEOIP-HK-03-Pro
+        - 🇸🇬 GLaDOS-GEOIP-SG-01-Pro
+        - 🇸🇬 GLaDOS-GEOIP-SG-02-Pro
+        - 🇸🇬 GLaDOS-GEOIP-SG-03-Pro
+        - 🇬🇧 GLaDOS-GEOIP-UK-01-Pro
+        - 🇬🇧 GLaDOS-GEOIP-UK-02-Pro
+        - 🇬🇧 GLaDOS-GEOIP-UK-03-Pro
+  - name: 健康检测
+    type: "fallback"
+    url: "http://www.gstatic.cn/generate_204"
+    interval: 600
+    tolerance: 50
+    proxies:
+        - 🇨🇳 GLaDOS-TW-1-Netflix
+        - 🇨🇳 GLaDOS-TW-2-Netflix
+        - 🇨🇳 GLaDOS-TW-3-Netflix
+        - Trojan台湾
+        - Trojan新加坡🇸🇬
+        - Trojan日本🇯🇵
+        - Trojan美国🇺🇸
+  - name: 𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+    type: "select"
+    proxies:
+        - 节点选择
+        - 自动选择
+        - 健康检测
+        - DIRECT
+  - name: 𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+    type: "select"
+    proxies:
+        - 节点选择
+        - 自动选择
+        - 健康检测
+        - DIRECT
+  - name: 巴哈姆特動畫瘋
+    type: "select"
+    proxies:
+        - 节点选择
+        - 自动选择
+        - 健康检测
+        - DIRECT
+  - name: 𝐓𝐢𝐤𝐓𝐨𝐤
+    type: "select"
+    proxies:
+        - 节点选择
+        - 自动选择
+        - 健康检测
+        - DIRECT
+  - name: 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+    type: "select"
+    proxies:
+        - 节点选择
+        - 自动选择
+        - 健康检测
+        - DIRECT
+  - name: 𝐏𝐚𝐲𝐏𝐚𝐥
+    type: "select"
+    proxies:
+        - DIRECT
+        - 节点选择
+        - 自动选择
+        - 健康检测
+  - name: 𝐀𝐩𝐩𝐥𝐞
+    type: "select"
+    proxies:
+        - DIRECT
+        - 节点选择
+        - REJECT
+  - name: 𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭
+    type: "select"
+    proxies:
+        - DIRECT
+        - 节点选择
+  - name: 国际媒体
+    type: "select"
+    proxies:
+        - 节点选择
+        - 自动选择
+        - 健康检测
+        - DIRECT
+        - REJECT
+  - name: 国际网站
+    type: "select"
+    proxies:
+        - 节点选择
+        - 自动选择
+        - 健康检测
+        - DIRECT
+        - REJECT
+  - name: 国内媒体
+    type: "select"
+    proxies:
+        - DIRECT
+        - REJECT
+        - 节点选择
+        - 自动选择
+        - 健康检测
+  - name: 国内网站
+    type: "select"
+    proxies:
+        - DIRECT
+        - REJECT
+        - 节点选择
+        - 自动选择
+        - 健康检测
+  - name: 广告过滤
+    type: "select"
+    proxies:
+        - DIRECT
+        - REJECT
+  - name: 其他规则
+    type: "select"
+    proxies:
+        - 节点选择
+        - 自动选择
+        - 健康检测
+        - DIRECT
+        - REJECT
+        
+
+  
+
+  - name: Auto-Edge
+    type: "url-test"
+    url: "http://www.gstatic.cn/generate_204"
+    interval: 600
+    tolerance: 100
+    proxies:
+        - GLaDOS-N2-04
+        - GLaDOS-N2-05
+        - GLaDOS-N2-06
+        - GLaDOS-N2-07
+        - GLaDOS-Portalgun-03
+        - GLaDOS-Portalgun-04
+        - GLaDOS-Portalgun-05
+        - GLaDOS-Portalgun-06
+        - GLaDOS-Portalgun-07
+        - GLaDOS-Portalgun-08
+  - name: Auto-Failover
+    type: "url-test"
+    url: "http://www.gstatic.cn/generate_204"
+    interval: 900
+    tolerance: 100
+    proxies:
+        - GLaDOS-Railgun-01
+        - GLaDOS-Railgun-02
+        - GLaDOS-Railgun-03
+        - GLaDOS-Railgun-04
+        - GLaDOS-Railgun-05
+        - GLaDOS-Railgun-06
+        - GLaDOS-Railgun-07
+        - GLaDOS-Railgun-08
+        - GLaDOS-Railgun-09
+  - name: Express
+    type: "fallback"
+    url: "http://www.gstatic.cn/generate_204"
+    interval: 600
+    tolerance: 50
+    proxies:
+        - Auto-Edge
+        - Auto-Fast
+        - Auto-Failover
+  - name: Auto
+    type: "fallback"
+    url: "http://www.gstatic.cn/generate_204"
+    interval: 600
+    proxies:
+        - Auto-Fast
+        - Auto-Edge
+        - Auto-Failover
+  - name: Geo
+    type: "url-test"
+    url: "http://www.gstatic.cn/generate_204"
+    interval: 3000
+    proxies:
+        - US-GLaDOS-GEO-00
+        - US-GLaDOS-GEO-01
+        - US-GLaDOS-GEO-02
+        - JP-GLaDOS-GEO-00
+        - JP-GLaDOS-GEO-01
+        - JP-GLaDOS-GEO-02
+        - TW-GLaDOS-GEO-00
+        - TW-GLaDOS-GEO-01
+        - TW-GLaDOS-GEO-02
+        - HK-GLaDOS-GEO-00
+        - HK-GLaDOS-GEO-01
+        - HK-GLaDOS-GEO-02
+        - SG-GLaDOS-GEO-00
+        - SG-GLaDOS-GEO-01
+        - SG-GLaDOS-GEO-02
+        - UK-GLaDOS-GEO-00
+        - UK-GLaDOS-GEO-01
+        - UK-GLaDOS-GEO-02
+  - name: Proxy
+    type: "select"
+    proxies:
+        - "Auto"
+        - US-GLaDOS-GEO-00
+        - US-GLaDOS-GEO-01
+        - US-GLaDOS-GEO-02
+        - JP-GLaDOS-GEO-00
+        - JP-GLaDOS-GEO-01
+        - JP-GLaDOS-GEO-02
+        - TW-GLaDOS-GEO-00
+        - TW-GLaDOS-GEO-01
+        - TW-GLaDOS-GEO-02
+        - HK-GLaDOS-GEO-00
+        - HK-GLaDOS-GEO-01
+        - HK-GLaDOS-GEO-02
+        - SG-GLaDOS-GEO-00
+        - SG-GLaDOS-GEO-01
+        - SG-GLaDOS-GEO-02
+        - UK-GLaDOS-GEO-00
+        - UK-GLaDOS-GEO-01
+        - UK-GLaDOS-GEO-02
+  - name: Video
+    type: "select"
+    interval: 600
+    url: "http://www.gstatic.cn/generate_204"
+    proxies:
+        - Express
+        - Auto-Edge
+        - GLaDOS-N2-04
+        - GLaDOS-N2-05
+        - GLaDOS-N2-06
+        - GLaDOS-N2-07
+        - GLaDOS-Portalgun-03
+        - GLaDOS-Portalgun-04
+        - GLaDOS-Portalgun-05
+        - GLaDOS-Portalgun-06
+        - GLaDOS-Portalgun-07
+        - GLaDOS-Portalgun-08
+  - name: NETFLIX
+    type: "select"
+    url: "http://www.gstatic.cn/generate_204"
+    interval: 1200
+    proxies:
+        - GLaDOS-US-1-Netflix
+        - GLaDOS-US-2-Netflix
+        - GLaDOS-US-3-Netflix
+        - GLaDOS-TW-1-Netflix
+        - GLaDOS-TW-2-Netflix
+        - GLaDOS-TW-3-Netflix
+        - Auto-Edge
+        - DIRECT
+rules:
+#user rules
+
+# check first
+- DOMAIN-SUFFIX,qq.com,国内网站
+- DOMAIN-SUFFIX,taobao.com,国内网站
+- DOMAIN-SUFFIX,baidu.com,国内网站
+- DOMAIN-SUFFIX,weibo.com,国内网站
+- DOMAIN-SUFFIX,jd.com,国内网站
+- DOMAIN-SUFFIX,tmall.com,国内网站
+- DOMAIN-SUFFIX,360.cn,国内网站
+- DOMAIN-SUFFIX,zhihu.com,国内网站
+- DOMAIN-SUFFIX,com.cn,国内网站
+- DOMAIN-SUFFIX,ol.epicgames.com,国内网站
+- DOMAIN-SUFFIX,steamcontent.com,国内网站
+
+# China CDN
+- DOMAIN-SUFFIX,tnkjmec.com,国内网站
+- DOMAIN-SUFFIX,clngaa.com,国内网站
+- DOMAIN-SUFFIX,ksyna.com,国内网站
+- DOMAIN-SUFFIX,bscstorage.net,国内网站
+- DOMAIN-SUFFIX,eccdnx.com,国内网站
+- DOMAIN-SUFFIX,pinyuncloud.com,国内网站
+- DOMAIN-SUFFIX,8686c.com,国内网站
+- DOMAIN-SUFFIX,pphimalayanrt.com,国内网站
+- DOMAIN-SUFFIX,qbox.me,国内网站
+- DOMAIN-SUFFIX,qiniu.com,国内网站
+- DOMAIN-SUFFIX,qiniudn.com,国内网站
+- DOMAIN-SUFFIX,qiniup.com,国内网站
+- DOMAIN-SUFFIX,qnsdk.com,国内网站
+- DOMAIN-SUFFIX,qnssl.com,国内网站
+- DOMAIN-SUFFIX,qiniucdn.com,国内网站
+- DOMAIN-SUFFIX,qiniudns.com,国内网站
+- DOMAIN-SUFFIX,sandai.net,国内网站
+
+# dns
+- IP-CIDR,119.29.29.29/32,国内网站
+- IP-CIDR,114.114.114.114/32,国内网站
+- IP-CIDR,1.1.1.1/32,国际网站
+- IP-CIDR,1.0.0.1/32,国际网站
+- IP-CIDR,8.8.8.8/32,国际网站
+- DOMAIN,dns.google,国际网站
+- DOMAIN,dig.bdurl.net,国内网站
+
+# debug
+- DOMAIN,ip.sb,国际网站
+- DOMAIN,myip.ipip.net,国际媒体
+- DOMAIN,ifconfig.me,国际网站
+
+# hot fix
+- DOMAIN-KEYWORD,scholar,国际网站
+- DOMAIN-KEYWORD,discord,国际网站
+- DOMAIN-KEYWORD,akam,国际媒体
+- DOMAIN,services.googleapis.cn,国际网站
+- DOMAIN,googleapis.cn,国际网站
+- DOMAIN-SUFFIX,ping.pe,国际网站
+- DOMAIN-SUFFIX,f2pool.com,国际网站
+- DOMAIN-SUFFIX,static.wikia.nocookie.net,国际网站
+
+# > ByteDance
+- DOMAIN-KEYWORD,toutiao,国内网站
+- DOMAIN-SUFFIX,bdxiguastatic.com,国内网站
+- DOMAIN-SUFFIX,bdurl.net,国内网站
+- DOMAIN-SUFFIX,douyinstatic.com,国内网站
+- DOMAIN-SUFFIX,douyin.com,国内网站
+- DOMAIN-SUFFIX,douyinpic.com,国内网站
+- DOMAIN-SUFFIX,douyinvod.com,国内网站
+- DOMAIN-SUFFIX,huoshan.com,国内网站
+- DOMAIN-SUFFIX,huoshanstatic.com,国内网站
+- DOMAIN-SUFFIX,huoshanzhibo.com,国内网站
+- DOMAIN-SUFFIX,ixigua.com,国内网站
+- DOMAIN-SUFFIX,ixiguavideo.com,国内网站
+- DOMAIN-SUFFIX,ixgvideo.com,国内网站
+- DOMAIN-SUFFIX,bdxiguaimg.com,国内网站
+- DOMAIN-SUFFIX,pstatp.com,国内网站
+- DOMAIN-SUFFIX,snssdk.com,国内网站
+- DOMAIN-SUFFIX,zijiecdn.com,国内网站
+- DOMAIN-SUFFIX,zijiecdn.net,国内网站
+- DOMAIN-SUFFIX,zjbyte.cn,国内网站
+- DOMAIN-SUFFIX,zjcdn.com,国内网站
+- DOMAIN-SUFFIX,bytedance.com,国内网站
+- DOMAIN-SUFFIX,bytedance.net,国内网站
+- DOMAIN-SUFFIX,bytedns.net,国内网站
+- DOMAIN-SUFFIX,byteimg.com,国内网站
+- DOMAIN-SUFFIX,feiliao.com,国内网站
+- DOMAIN-SUFFIX,gifshow.com,国内网站
+- DOMAIN-SUFFIX,huoshan.com,国内网站
+- DOMAIN-SUFFIX,iesdouyin.com,国内网站
+- DOMAIN-SUFFIX,ixigua.com,国内网站
+- DOMAIN-SUFFIX,kspkg.com,国内网站
+- DOMAIN-SUFFIX,pstatp.com,国内网站
+- DOMAIN-SUFFIX,snssdk.com,国内网站
+- DOMAIN-SUFFIX,wukong.com,国内网站
+- DOMAIN-SUFFIX,zijieimg.com,国内网站
+- DOMAIN-SUFFIX,zjbyte.com,国内网站
+- DOMAIN-SUFFIX,zjcdn.com,国内网站
+
+# > Bilibili
+- DOMAIN-KEYWORD,bili,国内媒体
+- DOMAIN-SUFFIX,acg.tv,国内媒体
+- DOMAIN-SUFFIX,acgvideo.com,国内媒体
+- DOMAIN-SUFFIX,b23.tv,国内媒体
+- DOMAIN-SUFFIX,hdslb.com,国内媒体
+- DOMAIN-SUFFIX,im9.com,国内媒体
+
+# > Blizzard
+- DOMAIN-SUFFIX,blizzard.com,国内网站
+- DOMAIN-SUFFIX,battle.net,国内网站
+- DOMAIN,blzddist1-a.akamaihd.net,国内网站
+
+- DOMAIN-SUFFIX,discord.co,国际网站
+- DOMAIN-SUFFIX,discord.com,国际网站
+- DOMAIN-SUFFIX,discord.gg,国际网站
+- DOMAIN-SUFFIX,discord.media,国际网站
+- DOMAIN-SUFFIX,discordapp.com,国际网站
+- DOMAIN-SUFFIX,discordapp.net,国际网站
+
+# common site
+- DOMAIN,services.googleapis.cn,国际网站
+- DOMAIN,google.com,国际网站
+- DOMAIN-SUFFIX,google.cn,国际网站
+- DOMAIN-SUFFIX,googleapis.cn,国际网站
+- DOMAIN-KEYWORD,facebook,国际网站
+- DOMAIN-SUFFIX,fb.me,国际网站
+- DOMAIN-KEYWORD,gmail,国际网站
+- DOMAIN-KEYWORD,twitter,国际网站
+- DOMAIN-KEYWORD,instagram,国际网站
+- DOMAIN-SUFFIX,twimg.com,国际网站
+- DOMAIN-KEYWORD,blogspot,国际网站
+- DOMAIN-KEYWORD,whatsapp,国际网站
+- DOMAIN-KEYWORD,glados,国际网站
+- DOMAIN-KEYWORD,wikipedia,国际网站
+- DOMAIN-SUFFIX,google.com,国际网站
+- DOMAIN-SUFFIX,facebook.com,国际网站
+- DOMAIN-SUFFIX,yahoo.com,国际网站
+- DOMAIN-SUFFIX,amazon.com,国际网站
+- DOMAIN-SUFFIX,vk.com,国际网站
+- DOMAIN-SUFFIX,reddit.com,国际网站
+- DOMAIN-SUFFIX,live.com,国际网站
+- DOMAIN-SUFFIX,zoom.us,国际网站
+- DOMAIN-SUFFIX,wikipedia.org,国际网站
+- DOMAIN-SUFFIX,myshopify.com,国际网站
+- DOMAIN-SUFFIX,instagram.com,国际网站
+- DOMAIN-SUFFIX,okezone.com,国际网站
+- DOMAIN-SUFFIX,office.com,国际网站
+- DOMAIN-SUFFIX,ebay.com,国际网站
+- DOMAIN-SUFFIX,bongacams.com,国际网站
+- DOMAIN-SUFFIX,blogspot.com,国际网站
+- DOMAIN-SUFFIX,yahoo.co.jp,国际网站
+- DOMAIN-SUFFIX,babytree.com,国际网站
+- DOMAIN-SUFFIX,amazon.co.jp,国际网站
+- DOMAIN-SUFFIX,adobe.com,国际网站
+- DOMAIN-SUFFIX,livejasmin.com,国际网站
+- DOMAIN-SUFFIX,stackoverflow.com,国际网站
+- DOMAIN-SUFFIX,dropbox.com,国际网站
+- DOMAIN-SUFFIX,msn.com,国际网站
+- DOMAIN-SUFFIX,yandex.ru,国际网站
+- DOMAIN-SUFFIX,linkedin.com,国际网站
+- DOMAIN-SUFFIX,twitter.com,国际网站
+- DOMAIN-SUFFIX,imgur.com,国际网站
+- DOMAIN-SUFFIX,amazonaws.com,国际网站
+- DOMAIN-SUFFIX,imdb.com,国际网站
+- DOMAIN-SUFFIX,whatsapp.com,国际网站
+- DOMAIN-SUFFIX,google.co.jp,国际网站
+- DOMAIN-SUFFIX,trello.com,国际网站
+- DOMAIN-SUFFIX,wordpress.com,国际网站
+- DOMAIN-SUFFIX,nytimes.com,国际网站
+- DOMAIN-SUFFIX,spotify.com,国际网站
+
+#crypto
+- DOMAIN-SUFFIX,bitbank.cc,国际网站
+- DOMAIN-SUFFIX,bitcoin.org,国际网站
+- DOMAIN-SUFFIX,bitfinex.com,国际网站
+- DOMAIN-SUFFIX,bitmex.com,国际网站
+- DOMAIN-SUFFIX,bitquick.co,国际网站
+- DOMAIN-SUFFIX,bitstamp.net,国际网站
+- DOMAIN-SUFFIX,bittrex.com,国际网站
+- DOMAIN-SUFFIX,btcbox.co.jp,国际网站
+- DOMAIN-SUFFIX,cex.io,国际网站
+- DOMAIN-SUFFIX,coinbase.com,国际网站
+- DOMAIN-SUFFIX,dogecoin.com,国际网站
+- DOMAIN-SUFFIX,kraken.com,国际网站
+- DOMAIN-SUFFIX,okex.com,国际网站
+- DOMAIN-SUFFIX,okx.com,国际网站
+- DOMAIN-SUFFIX,coinex.com,国际网站
+- DOMAIN-SUFFIX,paxful.com,国际网站
+
+# Video
+- DOMAIN-KEYWORD,youtube,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN,lybmc.com,国内媒体
+- DOMAIN,dayi.com,国际媒体
+- DOMAIN-SUFFIX,phncdn.com,国际媒体
+- DOMAIN-SUFFIX,phprcdn.com,国际媒体
+- DOMAIN-SUFFIX,youtu.be,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-SUFFIX,googlevideo.com,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-SUFFIX,ytimg.com,国际媒体
+- DOMAIN-SUFFIX,googleusercontent.com,国际媒体
+- DOMAIN-KEYWORD,twitch,国际媒体
+
+#NETFLIX
+- DOMAIN-KEYWORD,𝐍𝐞𝐭𝐟𝐥𝐢𝐱,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,nflxext.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,nflximg.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,nflximg.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,nflxso.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-KEYWORD,dualstack.apiproxy-,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-KEYWORD,dualstack.ichnaea-web-,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.com.edgesuite.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,us-west-2.amazonaws.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-KEYWORD,ichnaea-web-,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.com.edgesuite.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,nflxext.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,nflximg.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,nflximg.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,nflxso.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,nflxvideo.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+
+# > Fox+
+- DOMAIN-KEYWORD,foxplus,国际媒体
+- DOMAIN-SUFFIX,config.fox.com,国际媒体
+- DOMAIN-SUFFIX,emome.net,国际媒体
+- DOMAIN-SUFFIX,fox.com,国际媒体
+- DOMAIN-SUFFIX,foxdcg.com,国际媒体
+- DOMAIN-SUFFIX,foxnow.com,国际媒体
+- DOMAIN-SUFFIX,foxplus.com,国际媒体
+- DOMAIN-SUFFIX,foxplay.com,国际媒体
+- DOMAIN-SUFFIX,ipinfo.io,国际媒体
+- DOMAIN-SUFFIX,mstage.io,国际媒体
+- DOMAIN-SUFFIX,now.com,国际媒体
+- DOMAIN-SUFFIX,theplatform.com,国际媒体
+- DOMAIN-SUFFIX,urlload.net,国际媒体
+
+# > HBO && HBO Go
+- DOMAIN-SUFFIX,hbo.com,国际媒体
+- DOMAIN-SUFFIX,hboasia.com,国际媒体
+- DOMAIN-SUFFIX,hbogo.com,国际媒体
+- DOMAIN-SUFFIX,hbogoasia.hk,国际媒体
+
+# > Hulu
+- DOMAIN-SUFFIX,hulu.com,国际媒体
+- DOMAIN-SUFFIX,huluim.com,国际媒体
+- DOMAIN-SUFFIX,hulustream.com,国际媒体
+
+#Fast.com
+- DOMAIN-SUFFIX,fast.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,oca.nflxvideo.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,nflxvideo.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+
+- DOMAIN,cdn.registerdisney.go.com,国际媒体
+- DOMAIN-SUFFIX,adobedtm.com,国际媒体
+- DOMAIN-SUFFIX,bam.nr-data.net,国际媒体
+- DOMAIN-SUFFIX,bamgrid.com,国际媒体
+- DOMAIN-SUFFIX,braze.com,国际媒体
+- DOMAIN-SUFFIX,cdn.optimizely.com,国际媒体
+- DOMAIN-SUFFIX,cdn.registerdisney.go.com,国际媒体
+- DOMAIN-SUFFIX,cws.conviva.com,国际媒体
+- DOMAIN-SUFFIX,d9.flashtalking.com,国际媒体
+- DOMAIN-SUFFIX,disney-plus.net,国际媒体
+- DOMAIN-SUFFIX,disney-portal.my.onetrust.com,国际媒体
+- DOMAIN-SUFFIX,disney.demdex.net,国际媒体
+- DOMAIN-SUFFIX,disney.my.sentry.io,国际媒体
+- DOMAIN-SUFFIX,disneyplus.bn5x.net,国际媒体
+- DOMAIN-SUFFIX,disneyplus.com,国际媒体
+- DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net,国际媒体
+- DOMAIN-SUFFIX,disneystreaming.com,国际媒体
+- DOMAIN-SUFFIX,dssott.com,国际媒体
+- DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,国际媒体
+- DOMAIN-SUFFIX,js-agent.newrelic.com,国际媒体
+
+# > ABC
+- DOMAIN-SUFFIX,edgedatg.com,国际媒体
+- DOMAIN-SUFFIX,go.com,国际媒体
+
+# > AbemaTV
+- DOMAIN,linear-abematv.akamaized.net,国际媒体
+- DOMAIN-SUFFIX,abema.io,国际媒体
+- DOMAIN-SUFFIX,abema.tv,国际媒体
+- DOMAIN-SUFFIX,akamaized.net,国际媒体
+- DOMAIN-SUFFIX,ameba.jp,国际媒体
+- DOMAIN-SUFFIX,hayabusa.io,国际媒体
+
+# > Amazon Prime Video
+- DOMAIN-SUFFIX,aiv-cdn.net,国际媒体
+- DOMAIN-SUFFIX,amazonaws.com,国际媒体
+- DOMAIN-SUFFIX,amazonvideo.com,国际媒体
+- DOMAIN-SUFFIX,llnwd.net,国际媒体
+
+# > Bahamut
+- DOMAIN-SUFFIX,bahamut.com.tw,巴哈姆特動畫瘋
+- DOMAIN-SUFFIX,gamer.com.tw,巴哈姆特動畫瘋
+- DOMAIN-SUFFIX,hinet.net,巴哈姆特動畫瘋
+
+# > BBC
+- DOMAIN-KEYWORD,bbcfmt,国际媒体
+- DOMAIN-KEYWORD,co.uk,国际媒体
+- DOMAIN-KEYWORD,uk-live,国际媒体
+- DOMAIN-SUFFIX,bbc.co,国际媒体
+- DOMAIN-SUFFIX,bbc.co.uk,国际媒体
+- DOMAIN-SUFFIX,bbc.com,国际媒体
+- DOMAIN-SUFFIX,bbci.co,国际媒体
+- DOMAIN-SUFFIX,bbci.co.uk,国际媒体
+
+# > CHOCO TV
+- DOMAIN-SUFFIX,chocotv.com.tw,国际媒体
+
+# > Epicgames
+- DOMAIN-KEYWORD,epicgames,国际媒体
+- DOMAIN-SUFFIX,helpshift.com,国际媒体
+
+# > Imkan
+- DOMAIN-SUFFIX,imkan.tv,国际媒体
+
+# > JOOX
+- DOMAIN-SUFFIX,joox.com,国际媒体
+
+# > MytvSUPER
+- DOMAIN-KEYWORD,nowtv100,国际媒体
+- DOMAIN-KEYWORD,rthklive,国际媒体
+- DOMAIN-SUFFIX,mytvsuper.com,国际媒体
+- DOMAIN-SUFFIX,tvb.com,国际媒体
+
+# > Pandora
+- DOMAIN-SUFFIX,pandora.com,国际媒体
+
+# > Sky GO
+- DOMAIN-SUFFIX,sky.com,国际媒体
+- DOMAIN-SUFFIX,skygo.co.nz,国际媒体
+
+# > Spotify
+- DOMAIN-KEYWORD,spotify,国际媒体
+- DOMAIN-SUFFIX,scdn.co,国际媒体
+- DOMAIN-SUFFIX,spoti.fi,国际媒体
+
+# > viuTV
+- DOMAIN-SUFFIX,viu.tv,国际媒体
+
+# > Youtube
+- DOMAIN-KEYWORD,youtube,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-SUFFIX,googlevideo.com,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-SUFFIX,gvt2.com,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-SUFFIX,youtu.be,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-SUFFIX,youtu.be,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-SUFFIX,yt.be,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-SUFFIX,ytimg.com,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-KEYWORD,pornhub,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-KEYWORD,porn,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-KEYWORD,phncdn,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-SUFFIX,vimeo.com,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+- DOMAIN-SUFFIX,vimeocdn.com,𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+
+# > IQIYI
+- DOMAIN-KEYWORD,qiyi,国内媒体
+- DOMAIN-SUFFIX,qy.net,国内媒体
+- DOMAIN-SUFFIX,letv.com,国内媒体
+- DOMAIN-SUFFIX,71.am,国内媒体
+- DOMAIN-SUFFIX,71edge.com,国内媒体
+- DOMAIN-SUFFIX,iqiyi.com,国内媒体
+- DOMAIN-SUFFIX,iqiyipic.com,国内媒体
+- DOMAIN-SUFFIX,ppsimg.com,国内媒体
+- DOMAIN-SUFFIX,qiyi.com,国内媒体
+- DOMAIN-SUFFIX,qiyipic.com,国内媒体
+- DOMAIN-SUFFIX,qy.net,国内媒体
+
+# > NeteaseMusic
+- DOMAIN-SUFFIX,163yun.com,国内媒体
+- DOMAIN-SUFFIX,music.126.net,国内媒体
+- DOMAIN-SUFFIX,music.163.com,国内媒体
+
+#Tech
+- DOMAIN-SUFFIX,code.visualstudio.com,国内网站
+- DOMAIN-SUFFIX,v2ex.com,国际网站
+- DOMAIN-KEYWORD,gitlab,国际网站
+- DOMAIN-KEYWORD,github,国际网站
+- DOMAIN-SUFFIX,github.com,国际网站
+- DOMAIN-SUFFIX,github.io,国际网站
+- DOMAIN-KEYWORD,stackoverflow.com,国际网站
+- DOMAIN-SUFFIX,pinboard.in,国际网站
+- DOMAIN-SUFFIX,techcrunch.com,国际网站
+- DOMAIN-SUFFIX,trello.com,国际网站
+- DOMAIN-SUFFIX,techsmith.com,国际网站
+- DOMAIN-SUFFIX,thepiratebay.org,国际网站
+- DOMAIN-SUFFIX,pinterest.com,国际网站
+- DOMAIN-SUFFIX,yacd.haishan.me,国际网站
+
+# DIRECT
+- DOMAIN-SUFFIX,digicert.com,国内网站
+
+# CCTV
+- DOMAIN-SUFFIX,cctv.com,国内媒体
+- DOMAIN-SUFFIX,cctvpic.com,国内媒体
+- DOMAIN-SUFFIX,livechina.com,国内媒体
+
+# DiDi
+- DOMAIN-SUFFIX,didialift.com,国内网站
+- DOMAIN-SUFFIX,didiglobal.com,国内网站
+- DOMAIN-SUFFIX,udache.com,国内网站
+
+# Douyu 斗鱼
+- DOMAIN-SUFFIX,douyu.com,国内媒体
+- DOMAIN-SUFFIX,douyu.tv,国内媒体
+- DOMAIN-SUFFIX,douyuscdn.com,国内媒体
+- DOMAIN-SUFFIX,douyutv.com,国内媒体
+
+# Epic
+- DOMAIN-SUFFIX,epicgames.com,国内网站
+- DOMAIN-SUFFIX,helpshift.com,国内网站
+- DOMAIN-SUFFIX,paragon.com,国内网站
+- DOMAIN-SUFFIX,unrealengine.com,国内网站
+
+# HuaWei
+- DOMAIN-SUFFIX,dbankcdn.com,国内网站
+- DOMAIN-SUFFIX,hc-cdn.com,国内网站
+- DOMAIN-SUFFIX,hicloud.com,国内网站
+- DOMAIN-SUFFIX,huawei.com,国内网站
+- DOMAIN-SUFFIX,huaweicloud.com,国内网站
+- DOMAIN-SUFFIX,huaweishop.net,国内网站
+- DOMAIN-SUFFIX,hwccpc.com,国内网站
+- DOMAIN-SUFFIX,vmall.com,国内网站
+- DOMAIN-SUFFIX,vmallres.com,国内网站
+
+# Iflytek
+- DOMAIN-SUFFIX,iflyink.com,国内网站
+- DOMAIN-SUFFIX,iflyrec.com,国内网站
+- DOMAIN-SUFFIX,iflytek.com,国内网站
+
+# > Google
+- DOMAIN,pagead2.googlesyndication.com,国内网站
+- DOMAIN-SUFFIX,abc.xyz,国际网站
+- DOMAIN-SUFFIX,android.com,国际网站
+- DOMAIN-SUFFIX,androidify.com,国际网站
+- DOMAIN-SUFFIX,dialogflow.com,国际网站
+- DOMAIN-SUFFIX,autodraw.com,国际网站
+- DOMAIN-SUFFIX,capitalg.com,国际网站
+- DOMAIN-SUFFIX,certificate-transparency.org,国际网站
+- DOMAIN-SUFFIX,chrome.com,国际网站
+- DOMAIN-SUFFIX,chromeexperiments.com,国际网站
+- DOMAIN-SUFFIX,chromestatus.com,国际网站
+- DOMAIN-SUFFIX,chromium.org,国际网站
+- DOMAIN-SUFFIX,creativelab5.com,国际网站
+- DOMAIN-SUFFIX,debug.com,国际网站
+- DOMAIN-SUFFIX,deepmind.com,国际网站
+- DOMAIN-SUFFIX,firebaseio.com,国际网站
+- DOMAIN-SUFFIX,getmdl.io,国际网站
+- DOMAIN-SUFFIX,ggpht.com,国际网站
+- DOMAIN-SUFFIX,gmail.com,国际网站
+- DOMAIN-SUFFIX,gmodules.com,国际网站
+- DOMAIN-SUFFIX,godoc.org,国际网站
+- DOMAIN-SUFFIX,golang.org,国际网站
+- DOMAIN-SUFFIX,gv.com,国际网站
+- DOMAIN-SUFFIX,gwtproject.org,国际网站
+- DOMAIN-SUFFIX,itasoftware.com,国际网站
+- DOMAIN-SUFFIX,madewithcode.com,国际网站
+- DOMAIN-SUFFIX,material.io,国际网站
+- DOMAIN-SUFFIX,polymer-project.org,国际网站
+- DOMAIN-SUFFIX,admin.recaptcha.net,国际网站
+- DOMAIN-SUFFIX,recaptcha.net,国际网站
+- DOMAIN-SUFFIX,shattered.io,国际网站
+- DOMAIN-SUFFIX,synergyse.com,国际网站
+- DOMAIN-SUFFIX,tensorflow.org,国际网站
+- DOMAIN-SUFFIX,tiltbrush.com,国际网站
+- DOMAIN-SUFFIX,waveprotocol.org,国际网站
+- DOMAIN-SUFFIX,waymo.com,国际网站
+- DOMAIN-SUFFIX,webmproject.org,国际网站
+- DOMAIN-SUFFIX,webrtc.org,国际网站
+- DOMAIN-SUFFIX,whatbrowser.org,国际网站
+- DOMAIN-SUFFIX,widevine.com,国际网站
+- DOMAIN-SUFFIX,x.company,国际网站
+- DOMAIN-KEYWORD,google,国际网站
+- DOMAIN-SUFFIX,contest.com,国际网站
+- DOMAIN-SUFFIX,graph.org,国际网站
+- DOMAIN-SUFFIX,quiz.directory,国际网站
+- DOMAIN-SUFFIX,t.me,国际网站
+- DOMAIN-SUFFIX,tdesktop.com,国际网站
+- DOMAIN-SUFFIX,telega.one,国际网站
+- DOMAIN-SUFFIX,telegra.ph,国际网站
+- DOMAIN-SUFFIX,telegram.dog,国际网站
+- DOMAIN-SUFFIX,telegram.me,国际网站
+- DOMAIN-SUFFIX,telegram.org,国际网站
+- DOMAIN-SUFFIX,telegram.space,国际网站
+- DOMAIN-SUFFIX,telesco.pe,国际网站
+- DOMAIN-SUFFIX,tg.dev,国际网站
+- DOMAIN-SUFFIX,tx.me,国际网站
+- DOMAIN-SUFFIX,usercontent.dev,国际网站
+
+# apple
+- DOMAIN,hls.itunes.apple.com,𝐀𝐩𝐩𝐥𝐞
+- DOMAIN,itunes.apple.com,𝐀𝐩𝐩𝐥𝐞
+- DOMAIN-SUFFIX,apple.com,𝐀𝐩𝐩𝐥𝐞
+- DOMAIN-SUFFIX,icloud.com,𝐀𝐩𝐩𝐥𝐞
+- DOMAIN-SUFFIX,icloud-content.com,𝐀𝐩𝐩𝐥𝐞
+- DOMAIN-SUFFIX,mzstatic.com,𝐀𝐩𝐩𝐥𝐞
+- DOMAIN-SUFFIX,aaplimg.com,𝐀𝐩𝐩𝐥𝐞
+- DOMAIN-SUFFIX,cdn-apple.com,𝐀𝐩𝐩𝐥𝐞
+
+# microsoft
+- DOMAIN-SUFFIX,live.com,国内网站
+- DOMAIN-SUFFIX,live.net,国内网站
+- DOMAIN-SUFFIX,office.com,国内网站
+- DOMAIN-SUFFIX,office.net,国内网站
+- DOMAIN-SUFFIX,sharepoint.com,国内网站
+- DOMAIN-SUFFIX,office365.com,国内网站
+- DOMAIN-SUFFIX,officeppe.net,国内网站
+- DOMAIN-SUFFIX,skype.com,国内网站
+- DOMAIN-SUFFIX,onedrive.com,国内网站
+- DOMAIN-SUFFIX,msocsp.com,国内网站
+- DOMAIN-SUFFIX,msauthimages.net,国内网站
+- DOMAIN-SUFFIX,msauth.net,国内网站
+- DOMAIN-SUFFIX,msn.com,国内网站
+- DOMAIN-SUFFIX,onenote.com,国内网站
+- DOMAIN-SUFFIX,onenote.net,国内网站
+- DOMAIN-SUFFIX,1drv.com,国内网站
+- DOMAIN-SUFFIX,microsoft.com,国内网站
+- DOMAIN-SUFFIX,microsoftonline.com,国内网站
+
+- DOMAIN-SUFFIX,miui.com,国内网站
+- DOMAIN-SUFFIX,miwifi.com,国内网站
+- DOMAIN-SUFFIX,mob.com,国内网站
+- DOMAIN-SUFFIX,netease.com,国内网站
+- DOMAIN-SUFFIX,office.com,国内网站
+- DOMAIN-SUFFIX,office365.com,国内网站
+- DOMAIN-KEYWORD,officecdn,国内网站
+- DOMAIN-SUFFIX,oschina.net,国内网站
+- DOMAIN-SUFFIX,ppsimg.com,国内网站
+- DOMAIN-SUFFIX,pstatp.com,国内网站
+- DOMAIN-SUFFIX,qcloud.com,国内网站
+- DOMAIN-SUFFIX,qdaily.com,国内网站
+- DOMAIN-SUFFIX,qdmm.com,国内网站
+- DOMAIN-SUFFIX,qhimg.com,国内网站
+- DOMAIN-SUFFIX,qhres.com,国内网站
+- DOMAIN-SUFFIX,qidian.com,国内网站
+- DOMAIN-SUFFIX,qihucdn.com,国内网站
+- DOMAIN-SUFFIX,qiniu.com,国内网站
+- DOMAIN-SUFFIX,qiniucdn.com,国内网站
+- DOMAIN-SUFFIX,qiyipic.com,国内网站
+- DOMAIN-SUFFIX,qq.com,国内网站
+- DOMAIN-SUFFIX,qqurl.com,国内网站
+- DOMAIN-SUFFIX,rarbg.to,国内网站
+- DOMAIN-SUFFIX,ruguoapp.com,国内网站
+- DOMAIN-SUFFIX,segmentfault.com,国内网站
+- DOMAIN-SUFFIX,sinaapp.com,国内网站
+- DOMAIN-SUFFIX,smzdm.com,国内网站
+- DOMAIN-SUFFIX,sogou.com,国内网站
+- DOMAIN-SUFFIX,sogoucdn.com,国内网站
+- DOMAIN-SUFFIX,sohu.com,国内网站
+- DOMAIN-SUFFIX,soku.com,国内网站
+- DOMAIN-SUFFIX,speedtest.net,国内网站
+- DOMAIN-SUFFIX,sspai.com,国内网站
+- DOMAIN-SUFFIX,suning.com,国内网站
+- DOMAIN-SUFFIX,taobao.com,国内网站
+- DOMAIN-SUFFIX,tenpay.com,国内网站
+- DOMAIN-SUFFIX,tmall.com,国内网站
+- DOMAIN-SUFFIX,tudou.com,国内网站
+- DOMAIN-SUFFIX,umetrip.com,国内网站
+- DOMAIN-SUFFIX,upaiyun.com,国内网站
+- DOMAIN-SUFFIX,upyun.com,国内网站
+- DOMAIN-SUFFIX,veryzhun.com,国内网站
+- DOMAIN-SUFFIX,weather.com,国内网站
+- DOMAIN-SUFFIX,weibo.com,国内网站
+- DOMAIN-SUFFIX,xiami.com,国内网站
+- DOMAIN-SUFFIX,xiami.net,国内网站
+- DOMAIN-SUFFIX,xiaomicp.com,国内网站
+- DOMAIN-SUFFIX,ximalaya.com,国内网站
+- DOMAIN-SUFFIX,xmcdn.com,国内网站
+- DOMAIN-SUFFIX,xunlei.com,国内网站
+- DOMAIN-SUFFIX,xycdn.com,国内网站
+- DOMAIN-SUFFIX,yhd.com,国内网站
+- DOMAIN-SUFFIX,yihaodianimg.com,国内网站
+- DOMAIN-SUFFIX,yinxiang.com,国内网站
+- DOMAIN-SUFFIX,ykimg.com,国内网站
+- DOMAIN-SUFFIX,youdao.com,国内网站
+- DOMAIN-SUFFIX,youku.com,国内网站
+- DOMAIN-SUFFIX,zealer.com,国内网站
+- DOMAIN-SUFFIX,zhihu.com,国内网站
+- DOMAIN-SUFFIX,zhimg.com,国内网站
+- DOMAIN-SUFFIX,zimuzu.tv,国内网站
+
+# China
+- DOMAIN-SUFFIX,apcdns.net,国内网站
+- DOMAIN-SUFFIX,cdntip.com,国内网站
+- DOMAIN-SUFFIX,cdntips.com,国内网站
+- DOMAIN-SUFFIX,foxmail.com,国内网站
+- DOMAIN-SUFFIX,gtimg.com,国内网站
+- DOMAIN-SUFFIX,idqqimg.com,国内网站
+- DOMAIN-SUFFIX,imqq.com,国内网站
+- DOMAIN-SUFFIX,myapp.com,国内网站
+- DOMAIN-SUFFIX,myqcloud.com,国内网站
+- DOMAIN-SUFFIX,qcloud.com,国内网站
+- DOMAIN-SUFFIX,qcloudimg.com,国内网站
+- DOMAIN-SUFFIX,qq.com,国内网站
+- DOMAIN-SUFFIX,qqmail.com,国内网站
+- DOMAIN-SUFFIX,qzone.com,国内网站
+- DOMAIN-SUFFIX,servicewechat.com,国内网站
+- DOMAIN-SUFFIX,smtcdns.com,国内网站
+- DOMAIN-SUFFIX,smtcdns.net,国内网站
+- DOMAIN-SUFFIX,tencent.com,国内网站
+- DOMAIN-SUFFIX,tencent.com.hk,国内网站
+- DOMAIN-SUFFIX,tencent-cloud.com,国内网站
+- DOMAIN-SUFFIX,tencent-cloud.net,国内网站
+- DOMAIN-SUFFIX,tencentcs.com,国内网站
+- DOMAIN-SUFFIX,tencentmusic.com,国内网站
+- DOMAIN-SUFFIX,tencentyun.com,国内网站
+- DOMAIN-SUFFIX,tenpay.com,国内网站
+- DOMAIN-SUFFIX,wechat.com,国内网站
+- DOMAIN-SUFFIX,wegame.com,国内网站
+- DOMAIN-SUFFIX,weiyun.com,国内网站
+- DOMAIN-SUFFIX,25pp.com,国内网站
+- DOMAIN-SUFFIX,56che.com,国内网站
+- DOMAIN-SUFFIX,95095.com,国内网站
+- DOMAIN-SUFFIX,aliapp.org,国内网站
+- DOMAIN-SUFFIX,alibaba-inc.com,国内网站
+- DOMAIN-SUFFIX,alibaba.com,国内网站
+- DOMAIN-SUFFIX,alibabacapital.com,国内网站
+- DOMAIN-SUFFIX,alibabacorp.com,国内网站
+- DOMAIN-SUFFIX,alibabadoctor.com,国内网站
+- DOMAIN-SUFFIX,alibabafuturehotel.com,国内网站
+- DOMAIN-SUFFIX,alibabagroup.com,国内网站
+- DOMAIN-SUFFIX,alibabaplanet.com,国内网站
+- DOMAIN-SUFFIX,alibabaued.com,国内网站
+- DOMAIN-SUFFIX,alibabausercontent.com,国内网站
+- DOMAIN-SUFFIX,alifanyi.com,国内网站
+- DOMAIN-SUFFIX,alihealth.hk,国内网站
+- DOMAIN-SUFFIX,aliimg.com,国内网站
+- DOMAIN-SUFFIX,alikmd.com,国内网站
+- DOMAIN-SUFFIX,alimama.com,国内网站
+- DOMAIN-SUFFIX,alimebot.com,国内网站
+- DOMAIN-SUFFIX,alimei.com,国内网站
+- DOMAIN-SUFFIX,alipay.com,国内网站
+- DOMAIN-SUFFIX,alipaydns.com,国内网站
+- DOMAIN-SUFFIX,alipayobjects.com,国内网站
+- DOMAIN-SUFFIX,aliplus.com,国内网站
+- DOMAIN-SUFFIX,aliresearch.com,国内网站
+- DOMAIN-SUFFIX,alisoft.com,国内网站
+- DOMAIN-SUFFIX,alisports.com,国内网站
+- DOMAIN-SUFFIX,alitianji.com,国内网站
+- DOMAIN-SUFFIX,aliunicorn.com,国内网站
+- DOMAIN-SUFFIX,aliway.com,国内网站
+- DOMAIN-SUFFIX,aliwork.com,国内网站
+- DOMAIN-SUFFIX,alixiaomi.com,国内网站
+- DOMAIN-SUFFIX,alizhaopin.com,国内网站
+- DOMAIN-SUFFIX,asczwa.com,国内网站
+- DOMAIN-SUFFIX,asczxcefsv.com,国内网站
+- DOMAIN-SUFFIX,atatech.org,国内网站
+- DOMAIN-SUFFIX,b2byao.com,国内网站
+- DOMAIN-SUFFIX,bazai.com,国内网站
+- DOMAIN-SUFFIX,bcvbw.com,国内网站
+- DOMAIN-SUFFIX,cheng.xin,国内网站
+- DOMAIN-SUFFIX,dayu.com,国内网站
+- DOMAIN-SUFFIX,dfkhgj.com,国内网站
+- DOMAIN-SUFFIX,doctoryou.ai,国内网站
+- DOMAIN-SUFFIX,dongting.com,国内网站
+- DOMAIN-SUFFIX,dratio.com,国内网站
+- DOMAIN-SUFFIX,emas-poc.com,国内网站
+- DOMAIN-SUFFIX,gongyi.xin,国内网站
+- DOMAIN-SUFFIX,ialicdn.com,国内网站
+- DOMAIN-SUFFIX,ics.design,国内网站
+- DOMAIN-SUFFIX,jhgtgb.com,国内网站
+- DOMAIN-SUFFIX,kanbox.com,国内网站
+- DOMAIN-SUFFIX,lazada.com,国内网站
+- DOMAIN-SUFFIX,liangxinyao.com,国内网站
+- DOMAIN-SUFFIX,maitix.com,国内网站
+- DOMAIN-SUFFIX,mdeer.com,国内网站
+- DOMAIN-SUFFIX,mei.com,国内网站
+- DOMAIN-SUFFIX,1688.com,国内网站
+- DOMAIN-SUFFIX,etao.com,国内网站
+- DOMAIN-SUFFIX,juhuasuan.com,国内网站
+- DOMAIN-SUFFIX,lingshoujia.com,国内网站
+- DOMAIN-SUFFIX,pailitao.com,国内网站
+- DOMAIN-SUFFIX,taobao.com,国内网站
+- DOMAIN-SUFFIX,taobao.org,国内网站
+- DOMAIN-SUFFIX,taobaocdn.com,国内网站
+- DOMAIN-SUFFIX,taobizhong.com,国内网站
+- DOMAIN-SUFFIX,taopiaopiao.com,国内网站
+- DOMAIN-SUFFIX,tbcache.com,国内网站
+- DOMAIN-SUFFIX,tburl.in,国内网站
+- DOMAIN-SUFFIX,tmall.com,国内网站
+- DOMAIN-SUFFIX,tmall.ru,国内网站
+- DOMAIN-SUFFIX,tmalltv.com,国内网站
+- DOMAIN-SUFFIX,tmjl.ai,国内网站
+- DOMAIN-SUFFIX,alitrip.com,国内网站
+- DOMAIN-SUFFIX,feizhu.com,国内网站
+- DOMAIN-SUFFIX,fliggy.com,国内网站
+
+# allowed tracks
+- DOMAIN,graph.instagram.com,国内网站
+- DOMAIN,www.googleadservices.com,国内网站
+- DOMAIN,control.kochava.com,国内网站
+- DOMAIN,www.google-analytics.com,国内网站
+- DOMAIN,ssl.google-analytics.com,国内网站
+- DOMAIN,nexus.officeapps.live.com,国内网站
+- DOMAIN,googleads.g.doubleclick.net,国内网站
+- DOMAIN,e.crashlytics.com,国内网站
+- DOMAIN,ib.adnxs.com,国内网站
+- DOMAIN,safebrowsing.googleapis.com,国内网站
+- DOMAIN-SUFFIX,googlesyndication.com,国内网站
+- DOMAIN-SUFFIX,googletagmanager.com,国内网站
+- DOMAIN-SUFFIX,googletagservices.com,国内网站
+
+#EMAIL
+- DST-PORT,25,国内网站
+- DST-PORT,26,国内网站
+- DST-PORT,465,国内网站
+- DST-PORT,587,国内网站
+- DST-PORT,2525,国内网站
+
+# BT
+- DST-PORT,6881,国内网站
+- DST-PORT,6882,国内网站
+- DST-PORT,6883,国内网站
+- DST-PORT,6884,国内网站
+- DST-PORT,6885,国内网站
+- DST-PORT,6886,国内网站
+- DST-PORT,6887,国内网站
+- DST-PORT,6888,国内网站
+- DST-PORT,6889,国内网站
+
+# RULE VERSION
+- DOMAIN,2020020202.version.clash.im,广告过滤
+
+- DOMAIN-SUFFIX,cn,国内网站
+- GEOIP,CN,国内网站
+
+
+# LAN
+- IP-CIDR,127.0.0.0/8,国内网站
+- IP-CIDR,10.0.0.0/8,国内网站
+- IP-CIDR,17.0.0.0/8,国内网站
+- IP-CIDR,100.64.0.0/10,国内网站
+- IP-CIDR,172.16.0.0/12,国内网站
+- IP-CIDR,192.168.0.0/16,国内网站
+
+# Final
+- MATCH,其他规则
