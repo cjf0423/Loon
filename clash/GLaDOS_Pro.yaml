@@ -728,22 +728,22 @@ rules:
 - DOMAIN-KEYWORD,twitch,国际媒体
 
 #NETFLIX
-- DOMAIN-KEYWORD,𝐍𝐞𝐭𝐟𝐥𝐢𝐱,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
-- DOMAIN-SUFFIX,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
-- DOMAIN-SUFFIX,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-KEYWORD,netflix,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,netflix.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,netflix.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-SUFFIX,nflxext.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-SUFFIX,nflximg.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-SUFFIX,nflximg.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-SUFFIX,nflxso.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-KEYWORD,dualstack.apiproxy-,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-KEYWORD,dualstack.ichnaea-web-,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
-- DOMAIN-SUFFIX,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.com.edgesuite.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,netflix.com.edgesuite.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-SUFFIX,us-west-2.amazonaws.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-KEYWORD,ichnaea-web-,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
-- DOMAIN,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.com.edgesuite.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
-- DOMAIN-SUFFIX,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
-- DOMAIN-SUFFIX,𝐍𝐞𝐭𝐟𝐥𝐢𝐱.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN,netflix.com.edgesuite.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,netflix.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,netflix.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-SUFFIX,nflxext.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-SUFFIX,nflximg.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-SUFFIX,nflximg.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
