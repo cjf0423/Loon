@@ -603,7 +603,7 @@ rules:
 - DOMAIN-SUFFIX,ixgvideo.com,国内网站
 - DOMAIN-SUFFIX,bdxiguaimg.com,国内网站
 - DOMAIN-SUFFIX,pstatp.com,国内网站
-- DOMAIN-SUFFIX,snssdk.com,国内网站
+- DOMAIN-SUFFIX,snssdk.com,𝐓𝐢𝐤𝐓𝐨𝐤
 - DOMAIN-SUFFIX,zijiecdn.com,国内网站
 - DOMAIN-SUFFIX,zijiecdn.net,国内网站
 - DOMAIN-SUFFIX,zjbyte.cn,国内网站
@@ -777,7 +777,7 @@ rules:
 - DOMAIN-SUFFIX,hulustream.com,国际媒体
 
 #Fast.com
-- DOMAIN-SUFFIX,fast.com,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+- DOMAIN-SUFFIX,fast.com,𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭
 - DOMAIN-SUFFIX,oca.nflxvideo.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 - DOMAIN-SUFFIX,nflxvideo.net,𝐍𝐞𝐭𝐟𝐥𝐢𝐱
 
@@ -1001,21 +1001,21 @@ rules:
 - DOMAIN-SUFFIX,widevine.com,国际网站
 - DOMAIN-SUFFIX,x.company,国际网站
 - DOMAIN-KEYWORD,google,国际网站
-- DOMAIN-SUFFIX,contest.com,国际网站
-- DOMAIN-SUFFIX,graph.org,国际网站
-- DOMAIN-SUFFIX,quiz.directory,国际网站
-- DOMAIN-SUFFIX,t.me,国际网站
-- DOMAIN-SUFFIX,tdesktop.com,国际网站
-- DOMAIN-SUFFIX,telega.one,国际网站
-- DOMAIN-SUFFIX,telegra.ph,国际网站
-- DOMAIN-SUFFIX,telegram.dog,国际网站
-- DOMAIN-SUFFIX,telegram.me,国际网站
-- DOMAIN-SUFFIX,telegram.org,国际网站
-- DOMAIN-SUFFIX,telegram.space,国际网站
-- DOMAIN-SUFFIX,telesco.pe,国际网站
-- DOMAIN-SUFFIX,tg.dev,国际网站
-- DOMAIN-SUFFIX,tx.me,国际网站
-- DOMAIN-SUFFIX,usercontent.dev,国际网站
+- DOMAIN-SUFFIX,contest.com,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,graph.org,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,quiz.directory,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,t.me,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,tdesktop.com,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,telega.one,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,telegra.ph,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,telegram.dog,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,telegram.me,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,telegram.org,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,telegram.space,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,telesco.pe,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,tg.dev,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,tx.me,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+- DOMAIN-SUFFIX,usercontent.dev,𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
 
 # apple
 - DOMAIN,hls.itunes.apple.com,𝐀𝐩𝐩𝐥𝐞
@@ -1078,7 +1078,7 @@ rules:
 - DOMAIN-SUFFIX,sogoucdn.com,国内网站
 - DOMAIN-SUFFIX,sohu.com,国内网站
 - DOMAIN-SUFFIX,soku.com,国内网站
-- DOMAIN-SUFFIX,speedtest.net,国内网站
+- DOMAIN-SUFFIX,speedtest.net,𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭
 - DOMAIN-SUFFIX,sspai.com,国内网站
 - DOMAIN-SUFFIX,suning.com,国内网站
 - DOMAIN-SUFFIX,taobao.com,国内网站
