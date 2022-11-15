@@ -48,28 +48,28 @@ proxies:
     server: www.cjf0423.cf
     port: 443
     sni: www.cjf0423.cf
-    password: "111111"
+    password: "123456"
     udp: true
   - name: Trojan新加坡🇸🇬
     type: trojan
     server: www.cjf0423.tk
     port: 443
     sni: www.cjf0423.tk
-    password: "111111"
+    password: "123456"
     udp: true
   - name: Trojan美国🇺🇸
     type: trojan
     server: www.cjf0423.ml
     port: 443
     sni: www.cjf0423.ml
-    password: "111111"
+    password: "123456"
     udp: true
   - name: Trojan台湾
     type: trojan
     server: www.cjf0423.ga
     port: 443
     sni: www.cjf0423.ga
-    password: "111111"
+    password: "123456"
     udp: true
   - name: GLaDOS-N2-00-Pro
     type: trojan
